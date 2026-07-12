@@ -1,0 +1,20 @@
+{
+  "name": "ruc-paper-formatter-cn",
+  "version": "1.0.0-universal",
+  "language": "zh-CN",
+  "input": ["docx"],
+  "output": ["formatted_docx", "concise_markdown_report"],
+  "execution_modes": {
+    "agent_skill": "Full execution when the host can read files and run Python.",
+    "prompt_plus_local_runner": "Portable fallback for hosts that can reason over files but cannot execute bundled scripts.",
+    "prompt_only": "Audit and plan generation only; binary DOCX modification is not guaranteed."
+  },
+  "entrypoints": {
+    "agent_skill": "SKILL.md",
+    "portable_cli": "scripts/portable_workflow.py",
+    "generic_prompt": "platforms/generic/MASTER_PROMPT.md",
+    "gemini": "platforms/gemini/GEM_INSTRUCTIONS.md",
+    "workbuddy": "platforms/workbuddy/README.md",
+    "claude": "platforms/claude/README.md"
+  }
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+*.log
+.venv/
+venv/
+env/
+.DS_Store
+Thumbs.db
+paper_job/
+rendered*/
+output*/
+*.pdf
+!examples/*.pdf
